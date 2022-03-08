@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destiny App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="destiny-app">
+        <div class="card blue" v-for="card in cards" v-bind:class="card.color">
+        <img v-bind:src="card.img" alt="card image">
+        <div class="health">{{card.health}}</div>
+        <div class="rarity rare" v-if="card.rarity">{{card.setNumber}}</div>
+        <div class="rarity legendary" v-else>{{card.setNumber}}</div>
+        <div class="name">{{card.name}}</div>
+        <div class="affl" :class="card.affl">{{card.affl}}</div>
+    </div>
+<!--    {{title}}-->
+<!--    <div v-for="tweet in tweets" v-bind:class="{cool: tweet.cool}">-->
+<!--        <h1>{{tweet.name}}</h1>-->
+<!--        <h3 v-bind:style="{color:tweet.color}">{{tweet.color}}</h3>-->
+<!--        <h3>{{tweet.color}}</h3>-->
+<!--        <p v-if="tweet.cool">This person is cool.</p>'-->
+<!--        <p v-else>You suck.</p>-->
+<!--    </div>-->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
