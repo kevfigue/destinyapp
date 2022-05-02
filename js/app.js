@@ -9,7 +9,7 @@ new Vue({
                 affl:"hero",
                 color:"blue",
                 health:10,
-                img:"https://swdestinydb.com/bundles/cards/en/01/01038.jpg"
+                img:"ttps://swdestinydb.com/bundles/cards/en/01/01038.jpg"
             },
             {
                 name:"Han Solo",
